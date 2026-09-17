@@ -299,6 +299,53 @@ h1, h2, h3, .brand-text, .nav-cta, .menu-group-title {
 .menu-page:hover { transform: scale(1.02); }
 .menu-page img { width: 100%; height: 100%; object-fit: cover; object-position: top; aspect-ratio: 2/3; }
 
+/* ---------- Dishes gallery ---------- */
+.dishes-section {
+  background: var(--navy);
+  padding: 60px 20px 66px;
+}
+
+.dishes-section .section-heading h2 { color: var(--white); }
+.dishes-section .section-heading p { color: rgba(255,255,255,0.75); }
+.dishes-section .section-kicker { color: var(--gold); }
+
+.dishes-gallery {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.dish-card {
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+  box-shadow: var(--shadow);
+  aspect-ratio: 4/3;
+  background: var(--navy-deep);
+  transition: transform 0.2s ease;
+}
+.dish-card:hover { transform: scale(1.03); }
+.dish-card img { width: 100%; height: 100%; object-fit: cover; }
+
+.dish-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--white);
+  text-align: left;
+  background: linear-gradient(to top, rgba(12,31,63,0.9), rgba(12,31,63,0));
+}
+
 /* ---------- Location ---------- */
 .location-section {
   background: var(--navy-deep);

@@ -17,7 +17,7 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 const lightboxClose = document.getElementById('lightboxClose');
 
-document.querySelectorAll('.menu-page').forEach(btn => {
+document.querySelectorAll('.menu-page, .dish-card').forEach(btn => {
   btn.addEventListener('click', () => {
     lightboxImg.src = btn.dataset.full;
     lightbox.classList.add('open');
