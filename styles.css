@@ -129,10 +129,14 @@ h1, h2, h3, .brand-text, .nav-cta, .menu-group-title {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  background: radial-gradient(circle at 30% 20%, var(--navy-mid), var(--navy-deep) 70%);
+  background:
+    linear-gradient(180deg, rgba(12,31,63,0.78) 0%, rgba(12,31,63,0.55) 45%, rgba(12,31,63,0.92) 100%),
+    url('assets/img/hero-birria.jpg');
+  background-size: cover;
+  background-position: center 30%;
   color: var(--white);
   text-align: center;
-  padding: 70px 20px 60px;
+  padding: 90px 20px 70px;
   overflow: hidden;
 }
 
