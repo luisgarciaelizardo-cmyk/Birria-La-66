@@ -250,6 +250,7 @@ h1, h2, h3, .brand-text, .nav-cta, .menu-group-title {
 .social-btn:hover { transform: translateY(-2px); }
 
 .social-instagram { background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4); }
+.social-tiktok { background: #010101; }
 .social-facebook { background: #1877f2; }
 .social-location { background: var(--navy); }
 .social-whatsapp { background: #25d366; }
